@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-weight: 300;
+}
+
+a:active, a:link, a:visited {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFC947;
+}
+
+tr {
+    line-height: 4.5vw;
+}
+  
+#main {
+    justify-content: center;
+    text-align: center;
+}
+
+#active {
+    margin-top: 1vw;
+    font-size: 10vw;
+    font-weight: 700;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#date {
+    margin-top: -12vw;
+    font-size: 3vw;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#date-hours {
+    margin-top: -3vw;
+    font-size: 2vw;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#active-status {
+    margin-top: -2vw;
+    font-size: 2vw;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    animation: fadeInAnimation ease 4.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.countdown {
+    margin-top: -1vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.time {
+    font-size: 8vw;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-weight: 700;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 200px;
+}
+
+.time-titles {
+    font-size: 2vw;
+}
+
+#details {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#weeks-container {
+    margin-top: -1.5vw;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#weeks-container:hover {
+    cursor: pointer;
+}
+
+#weeks {
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+#weeks-title-start {
+    font-size: 2vw;
+}
+
+#weeks-title-end {
+    font-size: 2vw;
+}
+
+#months-container {
+    display: none;
+    margin-top: -1.5vw;
+}
+
+#months {
+    font-weight: 700;
+    font-size: 1.8vw;
+}
+
+#months-title-start {
+    font-size: 1.2vw;
+}
+
+#months-title-end {
+    font-size: 1.2vw;
+}
+
+#years-container {
+    display: none;
+    margin-top: -1.5vw;
+}
+
+#years {
+    font-weight: 700;
+    font-size: 1.8vw;
+}
+
+#years-title-start {
+    font-size: 1.2vw;
+}
+
+#years-title-end {
+    font-size: 1.2vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: black;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #d6dadd;
+    border-radius: 50px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+#me {
+    font-size: 1.5vw;
+    color: white;
+}
+
+#me:hover {
+    color: #c00414;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}

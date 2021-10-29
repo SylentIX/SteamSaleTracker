@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steam Sale Tracker</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"/>
+        <meta name="viewport" content="initial-scale=1">
+    </head>
+    <body>
+        <div id="main">
+            <table class="countdown">
+                <tr>
+                    <td colspan="4"></td>
+                    <p id="active"></p>
+                    <p id="date"></p>
+                    <p id="date-hours"></p>
+                    <p id="active-status"></p>
+                </tr>
+                <tr class="time">
+                    <td id="days">0</td>
+                    <td id="hours">00</td>
+                    <td id="minutes">00</td>
+                    <td id="seconds">00</td>
+                </tr>
+                <tr class="time-titles">
+                    <td id="days-title">Days</td>
+                    <td id="hours-title">Hours</td>
+                    <td id="minutes-title">Minutes</td>
+                    <td id="seconds-title">Seconds</td>
+                </tr>
+            </table>
+            <div id="details">
+                <div id="weeks-container">
+                    <p style="margin-top: 20px;"><span id="weeks-title-start">~ </span><span id="weeks">0</span><span id="weeks-title-end"> Weeks</span></p>
+                </div>
+                <div id="months-container">
+                    <p style="margin-top: 20px;"><span id="months-title-start">~ </span><span id="months">0</span><span id="months-title-end"> Months</span></p>
+                </div>
+                <div id="years-container">
+                    <p style="margin-top: 20px;"><span id="years-title-start">~ </span><span id="years">0</span><span id="years-title-end"> Years</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a target="_blank" href="https://steamcommunity.com/id/Nob0dyNowhere"><p id="me">Created by Nob0dy#2711</p></a>
+        </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/scripts/display.js"></script>
+    <script type="text/javascript" src="../assets/scripts/load.js"></script>
+    <script type="text/javascript" src="../assets/scripts/countdown.js"></script>
+</html>

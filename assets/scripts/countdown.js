@@ -85,7 +85,7 @@ var x = setInterval(function() {
     setTimeout(function() {
 
     document.getElementById('active').innerHTML = `<a target="_blank" href="https://store.steampowered.com/">${currentTitle.name} Sale</a>`;
-    document.getElementById('active-status').textContent = `Ends in::`;
+    document.getElementById('active-status').textContent = `Ends in:`;
     document.getElementById('active-status').style.color = '#c40014';
 
     }, 1000);

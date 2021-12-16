@@ -32,7 +32,7 @@ tr {
 
 #active {
     margin-top: 1vw;
-    font-size: 10vw;
+    font-size: 7vw;
     font-weight: 700;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -40,24 +40,24 @@ tr {
 }
 
 #date {
-    margin-top: -12vw;
-    font-size: 3vw;
+    margin-top: -8.5vw;
+    font-size: 2vw;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 #date-hours {
-    margin-top: -3vw;
-    font-size: 2vw;
+    margin-top: -2vw;
+    font-size: 1.3vw;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 #active-status {
-    margin-top: -2vw;
-    font-size: 2vw;
+    margin-top: -1.7vw;
+    font-size: 1.5vw;
     padding-top: 20px;
     padding-right: 50px;
     padding-left: 50px;
@@ -176,12 +176,12 @@ tr {
 }
 
 #me {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: white;
 }
 
 #me:hover {
-    color: #c00414;
+    color: #ce2042;
 }
 
 @keyframes fadeInAnimation {
@@ -197,4 +197,46 @@ tr {
     width: 100%;
     color: white;
     text-align: center;
+}
+
+#stores-title {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    margin-top: 35.5vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#stores {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    margin-top: 38vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.fanatical-img {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.humblebundle-img {
+    width: 80px;
+    height: 23.5625px;
+    padding: 10px;
 }

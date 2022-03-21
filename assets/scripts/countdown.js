@@ -222,7 +222,6 @@ var x = setInterval(function() {
     setTimeout(function() {
 
     document.getElementById('date').textContent = date.toLocaleDateString(undefined, options);
-    document.getElementById('date-hours').textContent = '10AM Pacific Time';
   
     document.getElementById('days').textContent = d;
     document.getElementById('hours').textContent = h;

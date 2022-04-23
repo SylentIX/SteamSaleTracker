@@ -85,8 +85,7 @@ var x = setInterval(function() {
     setTimeout(function() {
 
     document.getElementById('active').innerHTML = `<a target="_blank" href="https://store.steampowered.com/">${currentTitle.name} Sale</a>`;
-    document.getElementById('active-status').textContent = `Ends in:`;
-    document.getElementById('active-status').style.color = '#c40014';
+    document.getElementById('active').style.color = '#c40014';
 
     }, 1000);
 
@@ -117,8 +116,7 @@ var x = setInterval(function() {
 
     setTimeout(function() {
 
-    document.getElementById('date').textContent = date.toLocaleDateString(undefined, options);
-    document.getElementById('date-hours').textContent = '10AM Pacific Time';
+    document.getElementById('date').textContent = date.toLocaleDateString('en-GB', options);
   
     document.getElementById('days').textContent = d;
     document.getElementById('hours').textContent = h;
@@ -145,42 +143,6 @@ var x = setInterval(function() {
       document.getElementById('weeks-title-end').style.fontWeight = '700';
       document.getElementById('weeks-title-start').textContent = '';
     }
-
-    if (mo <= 1) {
-      document.getElementById('months-title-end').textContent = ' Month';
-    }
-
-    if (d === 1) {
-      document.getElementById('months').textContent = '';
-      document.getElementById('months-title-end').textContent = '';
-      document.getElementById('months-title-end').style.fontWeight = '700';
-      document.getElementById('months-title-start').textContent = '';
-    }
-
-    if (d === 0) {
-      document.getElementById('months').textContent = '';
-      document.getElementById('months-title-end').textContent = '';
-      document.getElementById('months-title-end').style.fontWeight = '700';
-      document.getElementById('months-title-start').textContent = '';
-    }
-
-    if (y <= 1) {
-      document.getElementById('years-title-end').textContent = ' Year';
-    }
-
-    if (d === 1) {
-      document.getElementById('years').textContent = '';
-      document.getElementById('years-title-end').textContent = '';
-      document.getElementById('years-title-end').style.fontWeight = '700';
-      document.getElementById('years-title-start').textContent = '';
-    }
-
-    if (d === 0) {
-      document.getElementById('years').textContent = '';
-      document.getElementById('years-title-end').textContent = '';
-      document.getElementById('years-title-end').style.fontWeight = '700';
-      document.getElementById('years-title-start').textContent = '';
-    }
     
     }, 1000);
 
@@ -189,8 +151,7 @@ var x = setInterval(function() {
     setTimeout(function() {
 
     document.getElementById('active').innerHTML = `<a target="_blank" href="https://store.steampowered.com/">${title.name} Sale</a>`;
-    document.getElementById('active-status').textContent = `Starts in:`;
-    document.getElementById('active-status').style.color = '#70af85';
+    document.getElementById('active').style.color = '#70af85';
 
     }, 1000);
 
@@ -221,7 +182,7 @@ var x = setInterval(function() {
 
     setTimeout(function() {
 
-    document.getElementById('date').textContent = date.toLocaleDateString(undefined, options);
+    document.getElementById('date').textContent = date.toLocaleDateString('en-GB', options);
   
     document.getElementById('days').textContent = d;
     document.getElementById('hours').textContent = h;

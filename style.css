@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -7,7 +7,7 @@ html {
 body {
     background: black;
     color: white;
-    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 
@@ -17,12 +17,8 @@ a:active, a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: #FFC947;
-}
-
 tr {
-    line-height: 4.5vw;
+    line-height: 3.5vw;
 }
   
 #main {
@@ -30,54 +26,53 @@ tr {
     text-align: center;
 }
 
+#title {
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    font-weight: 300;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 #active {
-    margin-top: 1vw;
-    font-size: 7vw;
+    text-transform: uppercase;
+    color: #d6dadd;
+    margin-top: -4.5vw;
+    font-size: 1.4vw;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#date {
+    text-transform: uppercase;
+    margin-top: -2vw;
+    font-size: 4vw;
     font-weight: 700;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-#date {
-    margin-top: -8.5vw;
-    font-size: 2vw;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#date-hours {
-    margin-top: -2vw;
-    font-size: 1.3vw;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#active-status {
-    margin-top: -1.7vw;
-    font-size: 1.5vw;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    animation: fadeInAnimation ease 4.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
 .countdown {
-    margin-top: -1vw;
+    padding-top: 1.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    margin-top: 2vw;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    border: 2px solid #d6dadd;
+    border-radius: 1vw;
 }
 
 .time {
-    font-size: 8vw;
+    color: white;
+    font-size: 6vw;
 }
 
 #days, #hours, #minutes, #seconds {
@@ -89,72 +84,7 @@ tr {
 }
 
 .time-titles {
-    font-size: 2vw;
-}
-
-#details {
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-}
-
-#weeks-container {
-    margin-top: -1.5vw;
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#weeks-container:hover {
-    cursor: pointer;
-}
-
-#weeks {
-    font-weight: 700;
-    font-size: 2.5vw;
-}
-
-#weeks-title-start {
-    font-size: 2vw;
-}
-
-#weeks-title-end {
-    font-size: 2vw;
-}
-
-#months-container {
-    display: none;
-    margin-top: -1.5vw;
-}
-
-#months {
-    font-weight: 700;
-    font-size: 1.8vw;
-}
-
-#months-title-start {
-    font-size: 1.2vw;
-}
-
-#months-title-end {
-    font-size: 1.2vw;
-}
-
-#years-container {
-    display: none;
-    margin-top: -1.5vw;
-}
-
-#years {
-    font-weight: 700;
-    font-size: 1.8vw;
-}
-
-#years-title-start {
-    font-size: 1.2vw;
-}
-
-#years-title-end {
+    color: #FFC947;
     font-size: 1.2vw;
 }
 
@@ -176,12 +106,24 @@ tr {
 }
 
 #me {
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: white;
 }
 
 #me:hover {
     color: #ce2042;
+}
+
+#no-sale {
+    margin-top: 5vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:340px;
+    height:223.5px;
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -197,49 +139,4 @@ tr {
     width: 100%;
     color: white;
     text-align: center;
-}
-
-#stores-title {
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    margin-top: 35.5vw;
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: 700;
-    animation: fadeInAnimation ease 7.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-#stores {
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    margin-top: 38vw;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    animation: fadeInAnimation ease 8s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.fanatical-img {
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-}
-
-.humblebundle-img {
-    width: 80px;
-    height: 23.5625px;
-    padding: 10px;
 }
